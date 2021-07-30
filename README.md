@@ -1,3 +1,3 @@
 # labelbot
 
-New content
+New
