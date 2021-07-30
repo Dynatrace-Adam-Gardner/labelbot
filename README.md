@@ -1,2 +1,2 @@
 # labelbot
-1
+2
