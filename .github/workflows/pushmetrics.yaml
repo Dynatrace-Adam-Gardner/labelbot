@@ -23,9 +23,7 @@ jobs:
                                    "runBy": "adam_gardner",
                                   "team": "innovation"
                                 },
-                      "label_confidence_data": {
-                                   "kind": 0.980
-                                 },
+                      "label_confidence_data": "{ \"kind\": 0.980 }",
                      "project": "engine3",
                      "service": "tools",
                      "stage": "dev"
