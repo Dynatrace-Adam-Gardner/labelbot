@@ -1,0 +1,10 @@
+name: pushmetrics
+
+on:
+  pull_request:
+    types:
+      - labeled
+      
+jobs:
+
+# TODO POST to Keptn with a payload containing the metrics info
