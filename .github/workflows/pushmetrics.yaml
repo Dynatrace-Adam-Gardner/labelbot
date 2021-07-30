@@ -6,5 +6,33 @@ on:
       - labeled
       
 jobs:
-
-# TODO POST to Keptn with a payload containing the metrics info
+  send_keptn_event:
+    runs-on: ubuntu-latest
+    name: Push Metrics to Keptn
+    steps:
+    - name: Send Keptn Event
+      id: send-keptn-event
+      uses: keptn/gh-action-send-event@main
+      with:
+        keptnApiUrl: ${{ secrets.KEPTN_API_URL }}
+        keptnApiToken: ${{ secrets.KEPTN_API_TOKEN }}
+        event: |
+          {
+            "data": {
+                       "labels": {
+                                   "runBy": "adam_gardner",
+                                  "team": "innovation"
+                                },
+                      "metrics": [{
+                                      "kind": 0.980
+                                    },{
+                                       "size": 0.880
+                                   }],
+                      "project": "engine3",
+                     "service": "tools",
+                     "stage": "dev"
+                    },
+             "source": "GitHub",
+             "specversion": "1.0",
+             "type": "sh.keptn.event.dev.pushmetrics.triggered"
+           }
