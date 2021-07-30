@@ -1,2 +1,2 @@
 # labelbot
-test
+1
