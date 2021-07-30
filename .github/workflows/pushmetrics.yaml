@@ -23,12 +23,10 @@ jobs:
                                    "runBy": "adam_gardner",
                                   "team": "innovation"
                                 },
-                      "metrics": [{
-                                      "kind": 0.980
-                                    },{
-                                       "size": 0.880
-                                   }],
-                      "project": "engine3",
+                      "metrics": {
+                                   "kind": 0.980
+                                 },
+                     "project": "engine3",
                      "service": "tools",
                      "stage": "dev"
                     },
